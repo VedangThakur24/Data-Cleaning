@@ -171,9 +171,3 @@ df = pd.get_dummies(df, columns=['unit_price_unit'], drop_first=True)
 # The KDE plots comparing the distributions before and after imputation for unit price value and best unit price value show very strong alignment. The overall shape of both distributions remains consistent, with only a slight increase in the central peak after imputation. This is expected because missing values were filled using the median within each category, leading to higher density around common values. The minimal difference between the curves suggests that the imputation process preserved the statistical integrity of the data, without introducing distortion or bias.
 # ### Outlier Detection
 # The outlier analysis identified five high-value entries in the item price column, ranging from 100 to 126.99. These were flagged using the IQR method and may indicate premium items, special offers, or potential issues such as unit misinterpretation or data entry errors. No unusually low values were found. Similarly, the price was column showed outliers on the higher end, with values between 105 and 127, likely reflecting original prices before discounts. Since the analysis involves discount trends and pricing models, it is important to review these records closely to ensure they do not introduce skew or inaccuracies in calculating discounts, promotions, or price-based segmentation.
-
-# In[ ]:
-
-
-
-
