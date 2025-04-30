@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[41]:
-
-
 import pandas as pd
 import re
 import matplotlib.pyplot as plt
